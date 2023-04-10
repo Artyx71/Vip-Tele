@@ -1,3 +1,7 @@
 .main__container {
   display: flex;
 }
+
+#earning {
+  width: 560px;
+}
