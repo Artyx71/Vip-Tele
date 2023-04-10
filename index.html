@@ -14,65 +14,74 @@
   </head>
   <body>
     <div class="main__container">
-      <div
-        class="d-flex flex-column flex-shrink-0 p-3 text-white bg-dark"
-        style="width: 280px; height: 100vh"
-      >
-        <a
-          href="/"
-          class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none"
+      <div class="navigation-sidebar">
+        <div
+          class="d-flex flex-column flex-shrink-0 p-3 text-white bg-dark"
+          style="width: 280px; height: 100vh"
         >
-          <img src="assets/images/logo.svg" alt="Vip-Telecom" />
-          <!-- <span class="fs-4">Vip-Telecom</span> -->
-        </a>
-        <hr />
-        <ul class="nav nav-pills flex-column mb-auto">
-          <li class="nav-item">
-            <a href="#" class="nav-link active" aria-current="page">
-              Главная
-            </a>
-          </li>
-          <li>
-            <a href="#" class="nav-link text-white"> История Платежей </a>
-          </li>
-          <li>
-            <a href="#" class="nav-link text-white"> Тарифы </a>
-          </li>
-          <li>
-            <a href="#" class="nav-link text-white"> Документы </a>
-          </li>
-          <li>
-            <a href="#" class="nav-link text-white"> Активные услуги </a>
-          </li>
-        </ul>
-        <hr />
-        <div class="dropdown">
           <a
-            href="#"
-            class="d-flex align-items-center text-white text-decoration-none dropdown-toggle"
-            id="dropdownUser1"
-            data-bs-toggle="dropdown"
-            aria-expanded="false"
+            href="/"
+            class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none"
           >
             <img
-              src="https://avatars.githubusercontent.com/u/46446380?v=4"
-              alt=""
-              width="32"
-              height="32"
-              class="rounded-circle me-2"
+              class="img-fluid"
+              src="assets/images/logo.svg"
+              alt="Vip-Telecom"
             />
-            <strong>Андрей Габараев</strong>
+            <!-- <span class="fs-4">Vip-Telecom</span> -->
           </a>
-          <ul
-            class="dropdown-menu dropdown-menu-dark text-small shadow"
-            aria-labelledby="dropdownUser1"
-          >
-            <li><a class="dropdown-item" href="#">Поменять тариф</a></li>
-            <li><a class="dropdown-item" href="#">Настройки</a></li>
-            <li><hr class="dropdown-divider" /></li>
-            <li><a class="dropdown-item" href="#">Выйти</a></li>
+          <hr />
+          <ul class="nav nav-pills flex-column mb-auto">
+            <li class="nav-item">
+              <a href="#" class="nav-link active" aria-current="page">
+                Главная
+              </a>
+            </li>
+            <li>
+              <a href="#" class="nav-link text-white"> История Платежей </a>
+            </li>
+            <li>
+              <a href="#" class="nav-link text-white"> Тарифы </a>
+            </li>
+            <li>
+              <a href="#" class="nav-link text-white"> Документы </a>
+            </li>
+            <li>
+              <a href="#" class="nav-link text-white"> Активные услуги </a>
+            </li>
           </ul>
+          <hr />
+          <div class="dropdown">
+            <a
+              href="#"
+              class="d-flex align-items-center text-white text-decoration-none dropdown-toggle"
+              id="dropdownUser1"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <img
+                src="https://avatars.githubusercontent.com/u/46446380?v=4"
+                alt=""
+                width="32"
+                height="32"
+                class="rounded-circle me-2"
+              />
+              <strong>Андрей Габараев</strong>
+            </a>
+            <ul
+              class="dropdown-menu dropdown-menu-dark text-small shadow"
+              aria-labelledby="dropdownUser1"
+            >
+              <li><a class="dropdown-item" href="#">Поменять тариф</a></li>
+              <li><a class="dropdown-item" href="#">Настройки</a></li>
+              <li><hr class="dropdown-divider" /></li>
+              <li><a class="dropdown-item" href="#">Выйти</a></li>
+            </ul>
+          </div>
         </div>
+      </div>
+      <div class="Index-chart">
+        <div id="earning" class="apex-charts"></div>
       </div>
     </div>
 
@@ -81,5 +90,7 @@
       integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="assets/scripts/script.js"></script>
   </body>
 </html>
