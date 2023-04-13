@@ -1,7 +1,23 @@
+body {
+  overflow: hidden;
+}
 .main__container {
   display: flex;
 }
 
 #earning {
-  width: 560px;
+  width: 45vw;
+}
+
+.main__container-middle {
+  padding-top: 5px;
+  margin-left: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 55%;
+}
+
+.main__container-middle .col {
+  width: 27%;
 }
